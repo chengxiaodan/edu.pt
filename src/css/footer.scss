@@ -1,0 +1,141 @@
+
+.yzl-page-footer {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    .m-mask {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #443258;
+        opacity: 0.4;
+    }
+    .bg {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background: url("../img/show/bg_dt.jpg") no-repeat;
+        background-size: 100% 100%;
+    }
+    .mn { 
+        display: table;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        text-align: center;
+        color: #FFF;
+        .td {
+            display: table-cell;
+            vertical-align: middle;
+        }
+        h2 {
+            font-size: 40px;
+        }
+        p.text {
+            display: block;
+            font-size: 24px;
+            line-height: 48px;
+        }
+        ul {
+            margin-top: 200px;
+            margin-bottom: 150px;
+            font-size: 24px;
+            line-height: 48px;
+            li {
+                position: relative;
+                display: inline-block;
+                vertical-align: top;
+                width: 20%;
+                padding-top: 100px;
+                word-break: break-all;
+                &:first-child {
+                    margin-left: 0;
+                    background: url("../img/show/icon_lx_wx.png") no-repeat center top;
+                    background-size: 50px 40px;
+                }
+                &:nth-child(2) {
+                    background: url("../img/show/icon_lx_dh.png") no-repeat center top;
+                    background-size: 35px 45px;
+                }
+                &:nth-child(3) {
+                    background: url("../img/show/icon_lx_dt.png") no-repeat center top;
+                    background-size: 35px 45px;
+                }
+                &:nth-child(4) {
+                    background: url("../img/show/icon_lx_yx.png") no-repeat center top;
+                    background-size: 40px 30px;
+                }
+                .qr {
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    display: none;
+                    width: 150px;
+                    margin-left: -75px;
+                    height: 150px;
+                    margin-top: -75px;
+                    background: url("../img/show/qr.jpg");
+                    background-size: 100% 100%;
+                }
+            }
+        }
+    }
+}
+// 手机
+@media screen and (max-width: 768px) {
+    .yzl-page-footer {
+        .bg {
+             background: url("../img/show/m-bg_6.jpg") no-repeat;
+             background-size: 100% 100%;
+        }
+        .mn {
+            h2 {
+                font-size: 22px;
+            }
+            p.text {
+                padding-left: 10px;
+                padding-right: 10px;
+                font-size: 12px;
+                line-height: 22px;
+            }
+            ul {
+                margin-top: 20px;
+                margin-bottom: 20px;
+                font-size: 12px;
+                li {
+                    margin-left: 10px;
+                    padding-top: 50px;
+                    &:first-child {
+                        margin-left: 0;
+                        background: url("../img/show/icon_lx_wx.png") no-repeat center top;
+                        background-size: 40px 30px;
+                    }
+                    &:nth-child(2) {
+                        background: url("../img/show/icon_lx_dh.png") no-repeat center top;
+                        background-size: 25px 35px;
+                    }
+                    &:nth-child(3) {
+                        background: url("../img/show/icon_lx_dt.png") no-repeat center top;
+                        background-size: 25px 35px;
+                    }
+                    &:nth-child(4) {
+                        background: url("../img/show/icon_lx_yx.png") no-repeat center top;
+                        background-size: 30px 20px;
+                    }
+                    .qr {
+                        width: 80px;
+                        margin-left: -40px;
+                        height: 80px;
+                        margin-top: -40px;
+                    }
+                }
+            }
+        }
+    }
+}
